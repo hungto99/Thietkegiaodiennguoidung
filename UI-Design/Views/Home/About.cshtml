@@ -1,0 +1,47 @@
+﻿@section css {
+    <link href="@Url.Content("~/css/PSD7.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/css/ourmenu.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/css/location.css")" rel="stylesheet" />
+}
+@section Scripts {
+    <script src="@Url.Content("~/js/ourmenu.js")"></script>
+    <script src="@Url.Content("~/js/PSD7.js")"></script>
+    <script>
+        $('#home').removeClass('border--custom');
+        $('#ourmenu').addClass('border--custom');
+    </script>
+}
+<div class="intro-slider slide1 intro_slider--custom1">
+    <div>LOCATION</div>
+    <div class="alt_slide">HOME <span> > </span>LOCATION</div>
+</div>
+<div class="warp_infor">
+    <div class="infor_fishhouse">
+        <div class="infor_background">
+        </div>
+        <div class="warp_greeting">
+            <div class="greeting">
+                LOCATION 1
+            </div>
+            <div class="infor_content row b4:jumbotron">
+                <div class="col-lg-6 contact">
+                    <div>
+                        <h3>PHONE</h3>
+                        800-123-1234
+                    </div>
+                    <div>
+                        <h3>LOCATION</h3>
+                        123, New Lenox,</br>
+                        Chicago, IL 60606
+                    </div>
+                    <div>
+                        <h3>HOURS</h3>
+                        <span>M-F</span> 11am-2am</br>
+                        <span>Sa</span> 10am-3am</br>
+                        <span>Su</span> 10am-2am
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

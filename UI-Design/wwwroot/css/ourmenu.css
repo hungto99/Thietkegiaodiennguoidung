@@ -1,0 +1,147 @@
+
+.menu_fliter{
+	margin: 50px auto;
+	position: unset;
+	right: unset;
+	text-align: center;
+	width: 60%;
+}
+.warp_whatnew{
+	padding-bottom: 0px;
+}
+.warp_whatnew--custtom2{
+	padding-top: 100px;
+}
+.menu_fliter .menu_element{
+	color: #a5926b;
+	font-family: 'Crimson Text', serif;
+	letter-spacing: 2px;
+	font-size: 18px !important;
+	font-style: italic;
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 18%;
+	cursor: pointer;
+}
+.menu_fliter .menu_element:hover{
+	color: #ed4848;
+}
+.col-sm-6{
+	padding: 0 !important;
+	padding-top: 50% !important ;
+}
+.gallery--cus1 {
+	margin: 0px !important;
+}
+.col-sm-6{
+	padding-top: 50%;
+}
+.col-sm-3{
+	padding-top: 25%;
+}
+.col-md-6{
+	padding: 0px !important;
+	margin: 0px !important;
+}
+.col-md-3{
+	padding: 0px !important;
+}
+.col-md-12{
+	padding:  0px !important;
+		margin: 0px !important;
+}
+.col-sm-12{
+	padding-top: 100% !important;
+}
+.img10 {
+    background-image: url('../images/menu-6.jpg');
+}
+.img11 {
+    background-image: url('../images/image-2.jpg');
+    background-size: 185% !important;
+}
+.img12 {
+    background-image: url('../images/image03.jpg');
+}
+.img13 {
+    background-image: url('../images/menu-7.jpg');
+}
+.img14 {
+    background-image: url('../images/image02.jpg');
+}
+.active{
+	color: #ed4848 !important;
+}
+.gallery--cus1 { }
+	.gallery--cus1 .pics {
+		-webkit-transition: all 350ms ease;
+		transition: all 350ms ease; }
+		.gallery--cus1 .animation {
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1); }
+
+.info_menu{
+	display: none;
+	width: 360px;
+	height: 140px;
+	text-align: center;
+	position: relative;
+	background-color: white;
+	color: black;
+	margin: 0 auto;
+	margin-top: 31%;
+	animation: hovermenu 0.3s;
+	opacity: 1;
+	animation-play-state: paused;
+}
+.col-md-12 .info_menu{
+	margin-top: 40%;
+
+}
+.animationplay{
+	animation-play-state: running;
+}
+.info_menu div{
+	width: 100%;
+}
+.info_menu div{
+	position: absolute;
+}
+.info_menu div span{
+	font-family: 'Times New Roman';
+	font-size: 20px;
+	font-style: italic;
+}
+.info_menu div h3 {
+	margin-top: 0px !important;
+	margin-right: 0px !important;
+	margin-block-start: 0px;
+	margin-block-end: 0px;
+	font-weight: 600;
+	font-size: 24px;
+}
+.info_menu div h3:hover{
+	color: #ed4848;
+	cursor: pointer;
+}
+.info_menu .font--cus1{
+	top: 10px;
+	color: rgb(132,132,132);
+}
+.info_menu .font--cus2{
+	bottom: 10px;
+	color: #ed4848;
+}
+.font--cus3{
+	top: 40%; 
+}
+.warp_info{
+	position: relative;
+}
+.warp_whatnew--custtom2 {
+    background-image: url("../images/footer.png");
+    padding: 0px;
+    padding-bottom: 100px;
+    padding-top: 150px;
+}

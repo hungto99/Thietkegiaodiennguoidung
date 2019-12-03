@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    @RenderSection("css", false)
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+    <div class="warp_header">
+        <div class="header">
+            <div class="header_logo">
+                <img src="~/images/logo.png" >
+            </div>
+            <div class="header_menubooktable">
+                <div class="booktable">
+                    book a table online
+                </div>
+                <div class="menu row">
+                    <div class="menu_element col-sm-2">
+                        <div id="home" class="border--custom">
+                            <a asp-controller="Home" asp-action="Index"> Home </a>
+</div>
+                    </div>
+                    <div class="menu_element col-sm-2">
+                        <div id="ourmenu">
+                            <a asp-controller="Home" asp-action="Ourmenu"> Our menu</a>
+                        </div>
+                    </div>
+                    <div class="menu_element col-sm-2">
+                        <div>
+                            location
+                        </div>
+                    </div>
+                    <div class="menu_element col-sm-2">
+                        <div>
+                            features
+                        </div>
+                    </div>
+                    <div class="menu_element col-sm-2">
+                        <div>
+                            gallery
+                        </div>
+                    </div>
+                    <div class="menu_element menu_element--cus1 col-sm-2">
+                        <div>
+                            contact
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @RenderBody()
+    <script src="~/js/jquery-3.3.1.js"></script>
+    <script src="~/js/bootstrap.js"></script>
+    @RenderSection("Scripts", false)
+</body>
+</html>
+
+

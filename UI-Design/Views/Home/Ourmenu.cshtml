@@ -1,0 +1,375 @@
+﻿@section css {
+    <link href="@Url.Content("~/css/PSD7.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/css/ourmenu.css")" rel="stylesheet" />
+}
+@section Scripts {
+    <script src="@Url.Content("~/js/ourmenu.js")"></script>
+    <script src="@Url.Content("~/js/PSD7.js")"></script>
+    <script>
+        $('#home').removeClass('border--custom');
+        $('#ourmenu').addClass('border--custom');
+    </script>
+}
+<div class="intro-slider slide1 intro_slider--custom1">
+    <div>OUR MENU</div>
+    <div class="alt_slide">HOME <span> > </span> OURMENU </div>
+</div>
+<div class="warp_whatnew bg">
+    <div class="whatnew">
+        HOT MENU
+        <div class="menu_fliter menu">
+            <div class="menu_element filter active" onclick="Fliter(event, 'gallery1')">
+                All
+            </div>
+            <div class="menu_element filter" onclick="Fliter(event, 'gallery2')">
+                Seafood
+            </div>
+            <div class="menu_element filter" onclick="Fliter(event, 'gallery3')">
+                Salad
+            </div>
+            <div class="menu_element filter" onclick="Fliter(event, 'gallery4')">
+                Appertize
+            </div>
+            <div class="menu_element filter" onclick="Fliter(event, 'gallery5')">
+                Specials
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="gallery--cus1 row" id="gallery1">
+        <div class="col-md-6 row">
+            <div class="warp_info col-md-6">
+                <div class="col-sm-12 gallery_img img3">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="2" name="food" />
+                    <div class="font--cus3">
+                        <h3>
+                            <input style="background:none; border:none" type="submit" value="Southwestern-Style Shrimp...">
+                        </h3>
+                    </div>
+                    <div class="font--cus2"><span>23$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-6">
+                <div class="col-sm-12 gallery_img img2">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="1" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Fish Kebab with Vegetables"></h3></div>
+                    <div class="font--cus2"><span>34$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-6">
+                <div class="col-sm-12 gallery_img img4">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="3" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Lemon Pepper Shrimp Scampi"></h3></div>
+                    <div class="font--cus2"><span>20$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-6">
+                <div class="col-sm-12 gallery_img img5">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="10" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Pan-Fried Trout with Tomat..."></h3></div>
+                    <div class="font--cus2"><span>24$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-12">
+                <div class="col-sm-12 gallery_img img10">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="4" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Broiled Tilapia with Thai..."></h3></div>
+                    <div class="font--cus2"><span>35$</span></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 row">
+            <div class="warp_info col-md-12">
+                <div class="col-sm-12 gallery_img img1">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="5" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Broiled Lobster Tails"></h3></div>
+                    <div class="font--cus2"><span>40$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-6">
+                <div class="col-sm-12 gallery_img img11">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="6" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Scallops with Spinach and ..."></h3></div>
+                    <div class="font--cus2"><span>19$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-6">
+                <div class="col-sm-12 gallery_img img13">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="9" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Vietnamese Fish Tacos with..."></h3></div>
+                    <div class="font--cus2"><span>15$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-6">
+                <div class="col-sm-12 gallery_img img14">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="7" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Boiled Dungeness Crabs wit..."></h3></div>
+                    <div class="font--cus2"><span>50$</span></div>
+                </form>
+                </div>
+                <div class="warp_info col-md-6">
+                    <div class="col-sm-12 gallery_img img12">
+                    </div>
+                    <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                        <div span class="font--cus1"><span>Daily Catch</span></div>
+                        <input style="display:none" type="text" value="8" name="food" />
+                        <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Grilled Salmon with Arugul..."></h3></div>
+                        <div class="font--cus2"><span>31$</span></div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+    <div class="gallery--cus1 row" id="gallery2" style="display:none">
+        <div class="col-md-3 row">
+            <div class="warp_info col-md-12">
+                <div class="col-sm-12 gallery_img img2">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="1" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Fish Kebab with Vegetables"></h3></div>
+                    <div class="font--cus2"><span>34$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-12">
+                <div class="col-sm-12 gallery_img img11">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="6" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Scallops with Spinach and ..."></h3></div>
+                    <div class="font--cus2"><span>19$</span></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-6 row">
+            <div class="warp_info col-md-12">
+                <div class="col-sm-12 gallery_img img1">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="5" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Broiled Lobster Tails"></h3></div>
+                    <div class="font--cus2"><span>40$</span></div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-3 row">
+            <div class="warp_info col-md-12">
+                <div class="col-sm-12 gallery_img img5">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="10" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Pan-Fried Trout with Tomat..."></h3></div>
+                    <div class="font--cus2"><span>24$</span></div>
+                </form>
+            </div>
+            <div class="warp_info col-md-12">
+                <div class="col-sm-12 gallery_img img12">
+                </div>
+                <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                    <div span class="font--cus1"><span>Daily Catch</span></div>
+                    <input style="display:none" type="text" value="8" name="food" />
+                    <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Grilled Salmon with Arugul..."></h3></div>
+                    <div class="font--cus2"><span>31$</span></div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="gallery--cus1 row" id="gallery3" style="display:none">
+        <div class="warp_info col-md-3">
+            <div class="col-sm-12 gallery_img img3">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="2" name="food" />
+                <div class="font--cus3">
+                    <h3>
+                        <input style="background:none; border:none" type="submit" value="Southwestern-Style Shrimp...">
+                    </h3>
+                </div>
+                <div class="font--cus2"><span>23$</span></div>
+            </form>
+        </div>
+
+
+        <div class="warp_info col-md-3">
+            <div class="col-sm-12 gallery_img img4">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="3" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Lemon Pepper Shrimp Scampi"></h3></div>
+                <div class="font--cus2"><span>20$</span></div>
+            </form>
+        </div>
+
+        <div class="warp_info col-md-3">
+            <div class="col-sm-12 gallery_img img13">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="9" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Vietnamese Fish Tacos with..."></h3></div>
+                <div class="font--cus2"><span>15$</span></div>
+            </form>
+        </div>
+
+
+        <div class="warp_info col-md-3">
+            <div class="col-sm-12 gallery_img img14">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="7" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Boiled Dungeness Crabs wit..."></h3></div>
+                <div class="font--cus2"><span>50$</span></div>
+            </form>
+        </div>
+
+    </div>
+    <div class="gallery--cus1 row" id="gallery4" style="display:none">
+        <div class="warp_info col-md-3">
+            <div class="col-sm-12 gallery_img img2">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="1" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Fish Kebab with Vegetables"></h3></div>
+                <div class="font--cus2"><span>34$</span></div>
+            </form>
+        </div>
+        <div class="warp_info col-md-3">
+            <div class="col-sm-12 gallery_img img14">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="7" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Boiled Dungeness Crabs wit..."></h3></div>
+                <div class="font--cus2"><span>50$</span></div>
+            </form>
+        </div>
+        <div class="warp_info col-md-3">
+            <div class="col-sm-12 gallery_img img4">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="3" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Lemon Pepper Shrimp Scampi"></h3></div>
+                <div class="font--cus2"><span>20$</span></div>
+            </form>
+        </div>
+
+    </div>
+    <div class="gallery--cus1 row" id="gallery5" style="display:none">
+        <div class="warp_info col-md-6">
+            <div class="col-sm-12 gallery_img img10">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="4" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Broiled Tilapia with Thai..."></h3></div>
+                <div class="font--cus2"><span>35$</span></div>
+            </form>
+        </div>
+
+
+        <div class="warp_info col-md-6">
+            <div class="col-sm-12 gallery_img img1">
+            </div>
+            <form method="get" class="info_menu" asp-controller="Home" asp-action="Food">
+                <div span class="font--cus1"><span>Daily Catch</span></div>
+                <input style="display:none" type="text" value="5" name="food" />
+                <div class="font--cus3"><h3><input style="background:none; border:none" type="submit" value="Broiled Lobster Tails"></h3></div>
+                <div class="font--cus2"><span>40$</span></div>
+            </form>
+        </div>
+
+    </div>
+    </div>
+    <div class="warp_whatnew warp_whatnew--custtom2 bg">
+        <div class="conclusion">
+            <div class="element">
+                <h3>
+                    A FEW MORE WORDS
+                </h3>
+                We invite you to enjoy our restaurant's tremendously delicious recipes made from scratch every day especially for you. Enjoy a delicious breakfast, lunch or dinner at our delightful place.
+
+            </div>
+            <div class="element">
+                <h3>
+                    QUICK LINKS
+                </h3>
+                <ul>
+                    <li>
+                        Menu
+                    </li>
+                    <li>
+                        Location
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Contacts
+                    </li>
+                </ul>
+            </div>
+            <div class="element">
+                <h3>
+                    STAY IN TOUCH
+                </h3>
+                <div class="email">
+                    Please, enter your email adress
+                    <span>
+                        <i class="fa fa-angle-right"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="socialmedia">
+            <i class="fa fa-tripadvisor fa--cus1"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram fa--cus1"></i>
+        </div>
+        <div class="copyright">
+            UI-Design © 2019 10 16 Tác Giả : Nhóm UI Design Thứ 6
+            <br />
+            Thành Viên: Vũ Trí Hùng Đặng Trần Toàn
+            <br />
+            Phạm Công Sơn Phan Văn Tuấn Lê Quang Vũ
+        </div>
+    </div>
+

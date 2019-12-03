@@ -1,0 +1,216 @@
+﻿@section css {
+    <link href="@Url.Content("~/css/PSD7.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/css/ourmenu.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/css/food.css")" rel="stylesheet" />
+}
+@section Scripts {
+    <script type="text/javascript">
+        $('.sidebar_element td').click(function () {
+            var x = $('.sidebar_element td');
+            $.each(x, function (index, value) {
+                value.style.backgroundColor = "transparent";
+                value.style.color = "rgb(132,132,132)";
+            });
+            this.style.backgroundColor = "#ed4848";
+            this.style.color = "white";
+        });
+    </script>
+}
+@{
+    var ImgUrl = "../images/" + @Model.FoodImg + ".jpg";
+}
+@using Models
+@model Food
+
+<div class="intro-slider slide1 intro_slider--custom1">
+    <div>
+        @Model.FoodName
+    </div>
+    <div class="alt_slide">HOME <span>> </span> APPETIZERS <span>></span>  @Model.FoodName</div>
+</div>
+<div class="warp_content row">
+    <div class="col-md-8">
+        <div>
+            <div class="card">
+                <div class="card-block">
+                    <h3 style="margin-top: 0px" class="card-text card-text--custom">
+                        @Model.FoodName
+                    </h3>
+                    <h4 class="card-title card-title--custom">
+                        May 19, 2016
+                        <div class="view">
+                            <i class="fa fa-eye">  567</i>
+                        </div>
+                    </h4>
+                    <div class="warp_img">
+                        <div style="background-image: url(@ImgUrl)" class="gallery_img">
+                        </div>
+                        <div class="hover_img">
+                        </div>
+                    </div>
+                    <p class="card-text"><small class="text-muted">@Model.Description</small></p>
+                    <div class="socialmedia" style="text-align:unset; margin-top:20px">
+                        <h4 style="display:inline-block; position: relative; top: -3px" ><span>Share:</span></h4>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-facebook"></i>
+                        <i style="font-size:20px" class="fa fa-instagram fa--cus1"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="card relate_post">
+                <div class="card-block">
+                    <h3 class="card-text">
+                        Relate Post
+                    </h3>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="gallery_img img12">
+                            </div>
+                            <div class="note">
+                                <h4 class="card-title">
+                                    Grilled Salmon with Arugula Salad grilled one or two hour
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_img img11">
+                            </div>
+                            <div class="note">
+                                <h4 class="card-title">Vietnamese Fish Tacos with Quick-Pickled Carrots</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="gallery_img img13">
+                            </div>
+                            <div class="note">
+                                <h4 class="card-title">Scallops with Spinach and Paprika Syrup</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block warp_comment">
+                <h3 style="margin-bottom:15px" class="card-text">
+                    Add Comment
+                </h3>
+                <h4>
+                    Your email address will not be published. Required fields are marked *
+                </h4>
+                <div class="comment">
+                    <div class="comment_element">
+                        <div> YOUR MESSAGE</div>
+                        <input class="input--cus1" type="text" name="">
+                    </div>
+                    <div class="comment_element">
+                        <div> HELLO, TELL US YOUR NAME</div>
+
+                        <input type="text" name="">
+                    </div>
+                    <div class="comment_element">
+                        <div> YOUR EMAIL</div>
+
+                        <input type="text" name="">
+                    </div>
+                    <div class="comment_element">
+                        <div> YOUR WEBSITE</div>
+
+                        <input type="text" name="">
+                    </div>
+                    <div class="postcomment">
+                        <div class="booktable fullmenu">
+                            POST COMMENT
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="sidebar">
+            <div class="sidebar_element">
+                <div class="card-block">
+                    <h3 class="card-text">
+                        Categories
+                    </h3>
+                    <ul>
+                        <li>Asian dishes</li>
+                        <li>Healthy food</li>
+                        <li>Open kitchen</li>
+                        <li>Seafood</li>
+                        <li>Spicy</li>
+                        <li>Uncategory</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_element">
+                <div class="card-block">
+                    <h3 class="card-text">
+                        Search
+                    </h3>
+                    <div class="warp_search">
+                        <input type="text" name="" placeholder="Search ...">
+                        <i class="fa fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="sidebar_element">
+                <div class="card-block">
+                    <h3 class="card-text">
+                        Calendar
+                    </h3>
+
+                </div>
+                <table id="wp-calendar-1820723503" class="wp-calendar"><thead><tr><th class="month_prev"><a href="#" class="item fa fa-angle-left" data-type="post" data-year="2016" data-month="07" data-letter="0" title="View posts for July 2016"></a></th><th class="month_cur" colspan="5">October <span>2019</span></th><th class="month_next"><span class="item fa fa-angle-right"></span></th></tr><tr><th class="weekday" scope="col" title="Monday">Mon</th><th class="weekday" scope="col" title="Tuesday">Tue</th><th class="weekday" scope="col" title="Wednesday">Wed</th><th class="weekday" scope="col" title="Thursday">Thu</th><th class="weekday" scope="col" title="Friday">Fri</th><th class="weekday" scope="col" title="Saturday">Sat</th><th class="weekday" scope="col" title="Sunday">Sun</th></tr></thead><tbody><tr><td colspan="1" class="pad"><span class="day_wrap">&nbsp;</span></td><td class="day"><span class="day_wrap">1</span></td><td class="day"><span class="day_wrap">2</span></td><td class="today"><span class="day_wrap">3</span></td><td class="day"><span class="day_wrap">4</span></td><td class="day"><span class="day_wrap">5</span></td><td class="day"><span class="day_wrap">6</span></td></tr><tr><td class="day"><span class="day_wrap">7</span></td><td class="day"><span class="day_wrap">8</span></td><td class="day"><span class="day_wrap">9</span></td><td class="day"><span class="day_wrap">10</span></td><td class="day"><span class="day_wrap">11</span></td><td class="day"><span class="day_wrap">12</span></td><td class="day"><span class="day_wrap">13</span></td></tr><tr><td class="day"><span class="day_wrap">14</span></td><td class="day"><span class="day_wrap">15</span></td><td class="day"><span class="day_wrap">16</span></td><td class="day"><span class="day_wrap">17</span></td><td class="day"><span class="day_wrap">18</span></td><td class="day"><span class="day_wrap">19</span></td><td class="day"><span class="day_wrap">20</span></td></tr><tr><td class="day"><span class="day_wrap">21</span></td><td class="day"><span class="day_wrap">22</span></td><td class="day"><span class="day_wrap">23</span></td><td class="day"><span class="day_wrap">24</span></td><td class="day"><span class="day_wrap">25</span></td><td class="day"><span class="day_wrap">26</span></td><td class="day"><span class="day_wrap">27</span></td></tr><tr><td class="day"><span class="day_wrap">28</span></td><td class="day"><span class="day_wrap">29</span></td><td class="day"><span class="day_wrap">30</span></td><td class="day"><span class="day_wrap">31</span></td><td class="pad" colspan="3"><span class="day_wrap">&nbsp;</span></td></tr></tbody></table>
+            </div>
+            <div class="sidebar_element">
+                <div class="card-block">
+                    <h3 class="card-text">
+                        Recent Posts
+                    </h3>
+                    <ul>
+                        <li>M3 E36 Cabrio</li>
+                        <li>Quick and Easy Homemade Sushi</li>
+                        <li>Sustainable Seafood and What you Can Do</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar_element">
+                <div class="card-block">
+                    <h3 class="card-text">
+                        Tags
+                    </h3>
+                    <div class="booktable fullmenu">
+                        COOKERY
+                    </div>
+                    <div class="booktable fullmenu">
+                        FISH
+                    </div>
+                    <div class="booktable fullmenu">
+                        KNIFE SKILLS
+                    </div>
+                    <div class="booktable fullmenu">
+                        LUCNH
+                    </div>
+
+                    <div class="booktable fullmenu">
+                        VETERGIAN
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="~/js/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+    $('.sidebar_element td').click(function () {
+        var x = $('.sidebar_element td');
+        $.each(x, function (index, value) {
+            value.style.backgroundColor = "transparent";
+            value.style.color = "rgb(132,132,132)";
+        });
+        this.style.backgroundColor = "#ed4848";
+        this.style.color = "white";
+    });
+</script>
